@@ -1,5 +1,9 @@
 # UnrealMCP: Capability and Context Efficiency Roadmap
 
+October 30, 2026 discovery index: added `docs/MCP-Tool-Index.md`, official discovery metadata snapshot and `Scripts/refresh_tool_index.py`. The index routes custom and official tools using short descriptions, without schemas. Snapshot regeneration is offline; `--official-url` performs read-only live discovery. Agent instructions require checking both routes before claiming a capability is absent. No editor assets or native APIs change.
+
+October 30, 2026 catalog refresh: added the bundled native catalog captured from the running DSM UE 5.8 editor (120 tools, including `AddBlueprintInterface`). Current adapter source builds without errors or warnings; existing live adapter discovery checks pass against DSM. Active clients still run the September 8 adapter binary; the verified current build is under `Adapter/UnrealMCP.Adapter/bin/ManifestRefresh`. Close clients and rebuild the normal Release output before reconnecting to activate current discovery and catalog notifications. No native source or index schema changed.
+
 Updated September 12, 2026. This is the authoritative development order. The [legacy milestone record](docs/LEGACY_ROADMAP.md) preserves previous tasks and acceptance evidence; historical numbering is a cross-reference, not a dependency order.
 
 ## Mission and boundary
